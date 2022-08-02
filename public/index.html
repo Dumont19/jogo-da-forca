@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da forca</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+
+
+    <script defer src="js/index.js"></script>
+    <script defer src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main class="container">
+        <div class="img"></div>
+        <div class="secret-word"></div>
+        <div class="keyboard">
+            <div class="keys">
+                <button id="key-A" onclick="verifyChoosenLetter('A')">A</button>
+                <button id="key-B" onclick="verifyChoosenLetter('B')">B</button>
+                <button id="key-C" onclick="verifyChoosenLetter('C')">C</button>
+                <button id="key-D" onclick="verifyChoosenLetter('D')">D</button>
+                <button id="key-E" onclick="verifyChoosenLetter('E')">E</button>
+                <button id="key-F" onclick="verifyChoosenLetter('F')">F</button>
+                <button id="key-G" onclick="verifyChoosenLetter('G')">G</button>
+                <button id="key-H" onclick="verifyChoosenLetter('H')">H</button>
+                <button id="key-I" onclick="verifyChoosenLetter('I')">I</button>
+            </div>
+            <div class="keys">
+                <button id="key-J" onclick="verifyChoosenLetter('J')">J</button>
+                <button id="key-K" onclick="verifyChoosenLetter('K')">K</button>
+                <button id="key-L" onclick="verifyChoosenLetter('L')">L</button>
+                <button id="key-M" onclick="verifyChoosenLetter('M')">M</button>
+                <button id="key-N" onclick="verifyChoosenLetter('N')">N</button>
+                <button id="key-O" onclick="verifyChoosenLetter('O')">O</button>
+                <button id="key-P" onclick="verifyChoosenLetter('P')">P</button>
+                <button id="key-Q" onclick="verifyChoosenLetter('Q')">Q</button>
+                <button id="key-R" onclick="verifyChoosenLetter('R')">R</button>
+            </div>
+            <div class="keys">
+                <button id="key-S" onclick="verifyChoosenLetter('S')">S</button>
+                <button id="key-T" onclick="verifyChoosenLetter('T')">T</button>
+                <button id="key-U" onclick="verifyChoosenLetter('U')">U</button>
+                <button id="key-V" onclick="verifyChoosenLetter('V')">V</button>
+                <button id="key-W" onclick="verifyChoosenLetter('W')">W</button>
+                <button id="key-X" onclick="verifyChoosenLetter('X')">X</button>
+                <button id="key-Y" onclick="verifyChoosenLetter('Y')">Y</button>
+                <button id="key-Z" onclick="verifyChoosenLetter('Z')">Z</button>
+                <button id="btn-restart">🎮</button>
+            </div>
+        </div>
+        <div class="category"></div>
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel"></h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

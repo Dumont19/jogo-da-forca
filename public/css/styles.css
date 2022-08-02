@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Ubuntu', sans-serif;
+    width: 100vw;
+    height: 90vh;
+    margin-top: .5em;
+    background-color: #f3f3f3;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.img {
+    background-image: url('../img/forca.png');
+    background-repeat: no-repeat;
+    width: 13em;
+    height: 16em;
+    margin-bottom: 1em;
+}
+
+.secret-word {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    margin-top: .5em;
+}
+
+.letters {
+    width: 1em;
+    text-align: center;
+    border-bottom: 2px solid #024bb8;
+    color: #1b1b1b;
+    margin: 0 .2em;
+}
+
+.letter-space {
+    width: 1em;
+    text-align: center;
+    color: #1b1b1b;
+    margin: 0 .2em;
+}
+
+.keyboard {
+    margin-top: 2em;
+}   
+
+.keys button {
+    width: 1.5em;
+    height: 1.5em;
+    margin: .2em;
+    border-radius: 10%;
+    cursor: pointer;
+    box-shadow: 0px 2px 3px #000;
+    border: 1px solid #000;
+    color: #024bb8;
+    font-weight: 700;
+}
+
+.keys button:hover {
+    transform: scale(1.3);
+    transition: .2s;
+}
+
+.category {
+    margin-top: 1em;
+    color: #024bb8;
+    font-size: 1.3em;
+}
+
+@media (min-width: 321px) {
+    .keys button {
+        width: 1.8em;
+        height: 1.8em;
+    }
+
+    .letters {
+        width: 1.5em;
+    }
+
+    .category {
+        font-size: 1.5em;
+    }
+}
+
+@media (min-width: 376px) {
+    .keys button {
+        width: 1.8em;
+        height: 1.8em;
+    }
+
+    .secret-word {
+        font-size: 1.4em;
+    }
+
+    .letters {
+        width: 1.2em;
+    }
+
+    .category {
+        font-size: 1.5em;
+    }
+}
+
+@media (min-width: 426px) {
+    .keys button {
+        width: 2.7em;
+        height: 2.7em;
+    }
+
+    .secret-word {
+        font-size: 1.5em;
+    }
+
+    .letters {
+        width: 1.4em;
+    }
+
+    .category {
+        font-size: 1.6em;
+    }
+}
+
+@media (min-width: 769px) {
+    .keys button {
+        width: 2.5em;
+        height: 2.5em;
+        font-size: 1.5em;
+    }
+
+    .secret-word {
+        font-size: 2.5em;
+    }
+
+    .letters {
+        width: 1.5em;
+    }
+
+    .category {
+        font-size: 2em;
+    }
+}
+
+
+
